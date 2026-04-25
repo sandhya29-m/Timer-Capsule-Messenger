@@ -1,0 +1,49 @@
+.scroll-area {
+  scrollbar-width: none;
+}
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-item {
+  display: "flex";
+  gap: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-item:hover,
+.chat-item.active {
+  background-color: #eee;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.msg {
+  max-width: 65%;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.msg.left {
+  background: #eee;
+}
+
+.msg.right {
+  background: black;
+  color: white;
+  margin-left: auto;
+}
